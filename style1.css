@@ -3,23 +3,24 @@
 .site {font-family:'Gotham Pro';
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(115px, auto); background-color: #1d55a6;
+    grid-auto-rows: minmax(115px, auto);  
 }
+
+
 .header, .main3, .main4, .main5, .main6 {grid-column: 1/3;}
 .header, .main1, .main2, .main4 {color: black;
-background-color: rgb(255, 255, 255);}
+background-color: rgb(255, 255, 255); }
 .main3, .main5, .main9, .main10 {color:rgb(255, 255, 255);
 background-color:black;}
 .main7, .main8 {background-color: rgb(255, 255, 255);}
-.main2 img,.main6 img, .main7 img {width: 100%; height: auto;}
+.main6 img, .main7 img {width: 100%; height: auto;}
 .pr2 img, .pr3 img, .pr4 img, .pr5 img, .pr6 img, .pr7 img {width: 100%; height: auto;}
 .par1 img, .par2 img, .par3 img {width: 100%; height: auto;}
-.main1,.main2, .main5,.main7,.main8, .main9, .main10 {display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: center; }
+.main1,.main2, .main5,.main7,.main8, .main9, .main10 {display: flex; flex-direction: column; text-align: center; align-items: center;  }
 .form1 {font-size:35px; padding: 10px;}
 .form2 {font-size:30px; padding: 10px;}
 .form3 {font-size:20px; padding-top: 25px; padding-bottom: 10px; line-height: 1.6;}
-.form4 {margin: 15px; font-size:15px; text-transform: uppercase; color: rgb(148, 148, 148); border-color:rgb(148, 148, 148); border-style: solid; border-width: 2px; padding: 7px; padding-left: 25px; padding-right: 25px;}
-.main2 {padding: 8px; padding-bottom: 35px;}
+.form4 {cursor:pointer; margin: 15px; font-size:15px; text-transform: uppercase; color: rgb(148, 148, 148); border-color:rgb(148, 148, 148); border-style: solid; border-width: 2px; padding: 7px; padding-left: 25px; padding-right: 25px; border-radius: 5px;}
 .main7 {padding: 3px; padding-right: 15px;}
 .form5 {font-size:15px; padding: 6px; padding-top: 30px;}
 .form6 {font-size:22px; padding: 6px; padding-bottom: 25px;}
@@ -38,19 +39,13 @@ html{
     max-width: 100%;
     overflow-x: hidden;
   }
-.site, .main1, .main2, .main3,.main4,.main5, .main6, .main7, .main8, .main9, .main10 
+.site,.main4, .main6, .main7, .main8, .main9, .main10 
   {width: 100%;
     max-width: 100%;
     overflow-x: hidden; overflow-y: hidden; 
     word-break: break-word;
 }
-.main3 {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(55px, auto);
-}
-.pr1 {grid-column: 1/4;}
-.form11 {font-size:12px; padding-top: 40px;}
+.form11 {font-size:16px; padding-top: 40px;}
 .form12 {font-size:22px; padding: 15px;}
 .form14 {font-size:10px; padding-bottom: 42px; color: rgb(148, 148, 148);}
 .form13 {font-size:10px; padding-bottom: 64px; color: rgb(148, 148, 148);}
@@ -118,8 +113,8 @@ html{
   }
 }
 
-.form4:hover,.form409:hover,.form17:hover {background-color: #1d55a6; color: rgb(255, 255, 255); border-color:rgb(0, 0, 0);
-    animation: wave 1.5s ;
+.form4:hover,.form17:hover,.form409:hover {background-color: #1d55a6; color: rgb(255, 255, 255); border-color:rgb(0, 0, 0);
+    animation: wave 0.2s ;
   }
   
   @keyframes wave {
@@ -141,15 +136,80 @@ html{
       background-position: -100% bottom;
     }
   }
-.top{ grid-column: 1/3; position: relative;} .rel1{ grid-column: 1/3; position: relative; background-color: rgb(20,20,21);} .rel1 img{width: 100%; padding-left:100px;}
-.rel{position: absolute; top:195px;  left:115px;  font-size: 6vh; color:rgb(255, 255, 255); line-height: 1.8;}
-.up{position: fixed; padding: 7px; padding-left: 9px; padding-right: 9px;
-    right: 35px; border-radius: 150%; 
-    bottom: 35px;
-text-decoration: none; color: rgb(255, 255, 255); background-color: #1d55a6; transition: background-color 0.7s ease;  box-shadow: 3px 3px 8px rgba(0, 0, 0, 1.2); }
+.top{ background-color: #333;} .rel1{ grid-column: 1/3; display:flex; flex-direction: row;  position: relative; background-color: rgb(255, 255, 255);} 
 .up:hover{  border-radius: 100%; background-color: rgb(255, 255, 255); text-decoration: none;}
 .form17{font-size: 15px;}
-.form209{position: absolute; top:225px;  left:85px;  font-size: 4vh; color:rgb(255, 255, 255); }
-.form100{position: absolute; top:275px;  left:85px;  font-size: 6vh; color:rgb(255, 255, 255); }
-.form309{position: absolute; top:335px;  left:85px;  font-size: 3vh; color:rgb(255, 255, 255); line-height: 2; }
-.form409{position: absolute; top:565px;  left:85px;  font-size: 3vh;   margin: 15px; font-size:15px; text-transform: uppercase; color: rgb(148, 148, 148); border-color:rgb(148, 148, 148); border-style: solid; border-width: 2px; padding: 7px; padding-left: 25px; padding-right: 25px; }
+.form209{ margin-left:85px;  font-size: 4vh; color:rgb(255, 255, 255); }
+.form100{ margin-top:45px;  margin-left:85px;  font-size: 6vh; color:rgb(255, 255, 255); }
+.form309{ margin-top:60px;  margin-left:85px;  font-size: 3vh; color:rgb(255, 255, 255); line-height: 2; }
+.form409{text-align: center; margin-bottom:75px; margin-top:35px;  margin-left:600px;  margin-right:600px; font-size: 3vh;    font-size:15px; text-transform: uppercase; color: rgb(255, 255, 255); border-color:rgb(255, 255, 255); border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px; }
+.glav1 {display: flex; flex-direction: column;}
+.main_benefit_2 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(55px, auto);
+  grid-column: 1/3;
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; overflow-y: hidden; 
+    word-break: break-word;  background-color:#333;
+}
+.main_benefit_2_pr1 {border-radius: 4%;  padding-top: 60px; padding-bottom: 60px; margin-left:65px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: left;  background-color:#ffffff; color: #000000; 
+}
+.main_benefit_2_pr2 {border-radius: 4%;  padding-top: 51px; padding-bottom: 60px; margin-left:6px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: left; background-color:#1d55a6; color: #ffffff;
+}
+.main_benefit_2_pr3 {border-radius: 4%;  padding-top: 60px; padding-bottom: 60px; margin-left:6px; margin-right:65px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: left; 
+  background-color:rgb(97, 227, 11); color: #ffffff;
+}
+.main_benefit_2_form1 { font-size:17px; padding: 15px; padding-top: 30px; padding-left: 25px;}
+.main_benefit_2_form2 { font-size:14px; padding-left: 25px; padding-top: 15px; padding-bottom: 10px; line-height: 1.6;}
+.main_benefit_2_pr1 img  {padding-left: 18px;}
+.main_benefit_2_pr3 img {padding-left: 25px;}
+.main_benefit_2_pr2 img {padding-left: 24px;}
+.main_about_us_in_digits_3 { display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(55px, auto);
+  grid-column: 1/3;
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; overflow-y: hidden; 
+    word-break: break-word;  }
+.main_about_us_in_digits_3_pr1 {padding-top: 30px; padding-bottom: 30px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: center;   color: #000000;}
+.main_about_us_in_digits_3_pr2 {padding-top: 30px; padding-bottom: 30px; margin-left:6px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: center;  color: #000000;
+}
+.main_about_us_in_digits_3_pr3 {padding-top: 30px; padding-bottom: 30px; margin-left:6px;  margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: center; 
+   color: #000000;
+}
+.main_about_us_in_digits_3_pr4 {padding-top: 30px; padding-bottom: 30px; margin-top: 15px; margin-bottom: 15px; display: flex; flex-direction: column; text-align: center;   color: #000000;}
+.main_about_us_in_digits_3_form1 { font-size:16px; padding-left: 10px; padding-top: 15px; padding-bottom: 10px; line-height: 1.6; color: rgb(0, 0, 0);}
+.cart1 {display: flex; flex-direction: row;
+  justify-content: center; color:  rgb(0, 0, 0);}
+.cart1_symbol {font-size: 26px; color: rgb(0, 0, 0); padding-top: 8px;}
+.form101{ margin-top:45px;    font-size: 6vh; color:rgb(0, 0, 0); } .form102{ margin-top:45px;    font-size: 4vh; color:rgb(0, 0, 0); } 
+.form101::after, .form102::after, .form103::after{
+  content: '';
+  display: block;
+  width: 150px; /* Ширина линии */
+  height: 3px; /* Толщина линии */
+  background-color:  #1d55a6; /* Цвет линии */
+  position: absolute;
+  bottom: -8px; /* Расстояние линии от текста */
+  left: 50%; /* Центрирование линии относительно текста */
+  transform: translateX(-50%); /* Центрирование линии относительно текста */
+}
+.form419{cursor:pointer; border-radius: 5px; grid-column: 1/3;  font-size: 6vh; color:rgb(255, 255, 255); line-height: 1.8; text-align: center;  font-size: 17px;    text-transform: uppercase; color: rgb(255, 255, 255); border-color:rgb(255, 255, 255); border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px;}
+.form419:hover {background-color: #1d55a6; color: rgb(255, 255, 255); border-color:rgb(0, 0, 0); border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px; 
+  animation: wave 0.2s ;
+}
+.form429:hover {cursor:pointer; background-color: #000000; color: #ffffff; border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px; 
+  animation: wave 0.2s ;
+}
+.form439:hover {color: #ffffff; border-color: #000000;}
+.form429 {color: #1d55a6;}
+.form500:hover {text-decoration: underline; color: #1d55a6;}
+.custom-button {background-color: rgb(255, 255, 255);}
+.custom-button:hover {
+  background-color: #000000;
+  border-color: #000000;
+  animation: wave 0.2s ;
+}

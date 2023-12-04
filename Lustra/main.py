@@ -70,7 +70,7 @@ for i, (x, y, w, h) in enumerate(faces):
 #plt.title('Фотография с подписями возраста')
 #plt.show()
 
-cv2.imwrite(f"photo_with_ages/photo_with_ages.jpg", cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+cv2.imwrite(f"photo_new/photo_new.jpg", cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
 # код для очищения директории
 for filename in os.listdir(image_dir):
