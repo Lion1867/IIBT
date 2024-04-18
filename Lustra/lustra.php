@@ -212,7 +212,7 @@
       </div>
       <div class="form-container-full">
       <div class="form-container" id="form_file">
-        <h2>Определите возраст людей на фотографии в один клик!</h2>
+        <h2>Определите возраст людей на фото в один клик!</h2>
       <form action="#real_new_img" method="post" enctype="multipart/form-data">
 <input class="custom-file-input" type="file" name="image" required>
 <input type="submit" value="Загрузить" name="submit">
