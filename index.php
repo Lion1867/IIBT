@@ -14,6 +14,21 @@
     <style>html {
         scroll-behavior: smooth;
       }
+    
+      
+      .plashka_special { color: #1d55a6; border-color: #1d55a6; }
+      .plashka_special:hover{color: black; border-color: #d3715e;}
+
+        .main4 a {
+        color: black;
+        transition: color 0.3s ease; /* Анимация для плавного изменения цвета текста */
+    }
+
+    .main4 a:hover {
+    background: linear-gradient(to right, #ff1493, #00bfff, #8a2be2); /* Розовый, голубой, сиреневый */
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
         .popup-overlay {
@@ -245,7 +260,8 @@ text-decoration: none; color: rgb(255, 255, 255); background-color: #1d55a6; tra
 @media (min-width: 425px) and (max-width: 492px) {.hamburger-icon {margin-top: 17px; margin-bottom: 17px; } #logo_adapt {width: 50%;  height: 50%; padding-left: 0vw; margin-right: 88px; margin-top: 17px; margin-bottom: 17px;} }
 @media (min-width: 340px) and (max-width: 425px) {.hamburger-icon {margin-top: 18px; margin-bottom: 18px;} #logo_adapt {width: 50%;  height: 50%; padding-left: 0vw; margin-right: 88px; margin-top: 18px; margin-bottom: 18px;} }
 @media (max-width: 340px) {.hamburger-icon {margin-top: 29px; margin-bottom: 29px;} #logo_adapt {width: 70%;  height: 70%; padding-left: 0vw; margin-right: 88px; margin-top: 29px; margin-bottom: 29px;} }
-    </style>
+    
+</style>
 </head>
 <body>
     <div class="site">
@@ -435,13 +451,10 @@ background-color: rgb(255, 255, 255); border-bottom: 5px solid #1d55a6; color: #
         <div></div>
         <div class="main5"  style="background-color: white; color: black;">
     <span class="form5" data-aos="fade-right" data-aos-duration="1800" style="font-size: 17px;">
-        Мы подготовили для Вас пример выполненных работ, <br>
-        а также отзывы благодарных нам компаний-клиентов<br>
+        Мы подготовили для Вас
+        отзывы благодарных нам компаний-клиентов<br>
     </span>
     <div id="main5_adapt" data-aos="fade-right" data-aos-duration="1800" style="display: flex; justify-content: center; margin-top: 20px;">
-        <span style="border-radius: 5px; cursor:pointer; margin: 0 10px;">
-            <a class="form439" style="text-decoration: none; margin-top: 17px; margin-bottom: 10px;" href="/Lustra/lustra.php" target="_blank"><span class="form429" style="border-radius: 5px; margin-top: 50px; line-height: 1.8; text-align: center;  font-size: 17px;  text-decoration: none;   text-transform: uppercase;  border-color:#1d55a6; border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px;">Посмотреть демо</span></a>
-        </span>
         <span style="border-radius: 5px; cursor:pointer; margin: 0 10px;">
             <a class="form439" style="text-decoration: none; margin-bottom: 10px;" href="reviews.php"><span class="form429" style="border-radius: 5px; margin-top: 50px; line-height: 1.8; text-align: center;  font-size: 17px;  text-decoration: none;   text-transform: uppercase;  border-color:#1d55a6; border-style: solid; border-width: 2px; padding: 7px; padding-left: 10px; padding-right: 10px;">Читать отзывы</span></a>
         </span>
@@ -452,13 +465,24 @@ background-color: rgb(255, 255, 255); border-bottom: 5px solid #1d55a6; color: #
         <span class="form102"   style="text-align: center;  position: relative; font-size: 32px;  "><b>УСПЕШНО ВНЕДРЁННЫЕ ИИ-РЕШЕНИЯ НАШЕЙ КОМПАНИИ</b></span>
         </div>
         <div class="main4" >
-           <div class="par1" data-aos="fade-right" data-aos-duration="1800"> 
-            <img src="Images/8.jpg" weight="120" height="70" alt="Картинка_8">  
-            <span class="form15"><b>ИНТЕЛЛЕКТУАЛЬНЫЙ ПОМОЩНИК+</b></span></div>
-            <div class="par2" data-aos="zoom-in" data-aos-duration="1800"> 
-                <img src="Images/7.jpg" alt="Картинка_7">
-                <span class="form15"><b>ТЕХНОЛОГИЧЕСКИЙ КОМПАНЬОН</b></span>    
-            </div>
+
+        <div class="par1"><a href="/Lustra/lustra.php" target="_blank" data-aos="fade-right" data-aos-duration="1800" style="cursor:pointer; text-decoration: none; position: relative; display: inline-block;">
+    
+    <img src="Images/8_1.jpg" weight="120" height="70" alt="Картинка_8"> 
+    <div style="text-align: right; margin-top: 8px; margin-bottom: 5px;">
+        <b class="plashka_special" style="background: linear-gradient(to right, #ff6ec7, #87ceeb, #8a2be2);  padding: 4px 5px 4px; border-radius: 15px;">try</b>
+    </div>
+    <span class="form15"><b>ОПРЕДЕЛЕНИЕ ВОЗРАСТА ЛЮДЕЙ НА ФОТОГРАФИИ</b></span>
+</a></div>
+<div class="par2">
+<a href="/SEGM-model/text_recognition.php" target="_blank" data-aos="zoom-in" data-aos-duration="1800" style="cursor:pointer; text-decoration: none; position: relative; display: inline-block;">
+    <img src="Images/7_1.jpg" alt="Картинка_7">
+    <div style="text-align: right; margin-top: 8px; margin-bottom: 5px;">
+        <b class="plashka_special" style="background: linear-gradient(to right, #ff6ec7, #87ceeb, #8a2be2); padding: 4px 5px 4px; border-radius: 15px;">try</b>
+    </div>
+    <span class="form15"><b>РАСПОЗНАВАНИЕ РУКОПИСНОГО РУССКОГО ТЕКСТА</b></span>
+</a>
+</div>
             <div class="par3">
                 <img data-aos="zoom-in" data-aos-duration="1800" src="Images/9.jpg" weight="120" height="70" alt="Картинка_9"> 
                 <span class="form15" data-aos="zoom-in" data-aos-duration="1800"> <b>СМАРТСФЕРА 360-OFF</b> </span>
